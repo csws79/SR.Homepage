@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* SIR 지운아빠 */
 
 /* 초기화 */
@@ -292,6 +292,9 @@ a.btn_admin:focus, a.btn_admin:hover {text-decoration:none}
 .spec3 {padding:0px 0px 20px 0px;margin:2% 1% 2% 1%;box-sizing:border-box;float:left;width:31.3333%;min-height:440px;background:#fff;position:relative;color:#666;font-size:15px;}
 .spec3 strong {font-size:22px;color:#222;padding:20px 0 0;display:block;text-align: left;}
 .spec3 p {padding: 0 10px 10px 10px; line-height: 1.5;font-size: 17px; background:url(../images/dot.png) no-repeat 0 12px;text-align:left;}
+
+.spec33 {padding:0px 0px 20px 0px;margin:2% 1% 2% 1%;box-sizing:border-box;float:left;background:#fff;position:relative;color:#666;font-size:15px;}
+
 
 .spec4 {padding:70px 20px 20px 20px;margin:1% 1% 7% 1%;border:2px solid #d9d9d9;box-sizing:border-box;float:left;width:48%;background:#fff;border-radius:5px;position:relative;min-height:315px}
 .spec4 p.img {position:absolute;top:-70px;left:0;width:100%;text-align:center;}
