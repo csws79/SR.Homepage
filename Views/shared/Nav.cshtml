@@ -1,0 +1,57 @@
+﻿<script>
+$(document).ready(function(){
+	$(".menu ul").mouseover(function(){
+		$(".gnb_bg").css({"display":"block", "opacity":"1"}).animate({opacity:1}, 800);
+	});
+	$(".menu ul").mouseout(function(){
+		$(".gnb_bg").css({"display":"none", "opacity":"0"}).animate({opacity:1}, 800);
+	});
+});
+
+</script>
+
+    <div class="nav_wrapper">
+
+        <div class="container">
+            <h1><a href="/"><img src="~/content/images/logo.png" alt="" /></a></h1>
+            <div class="spinner-master">
+                <input type="checkbox" id="spinner-form" />
+                <label for="spinner-form" class="spinner-spin">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+            </div>
+            <!-- LOCAL NAVIGATIONB BAR -->
+            <div class="menu" id="menu">
+                <ul>
+                    <li>
+                        <a href="@Url.Action("smartraiser1")" title="스마트레이저 서비스">스마트레이저 서비스</a>
+                        <ul class="submenu">
+                            <li><a href="@Url.Action("smartraiser1")" title="특징">특징</a></li>
+                            <li><a href="@Url.Action("smartraiser2")" title="기능">기능</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("smartgive")" title="온라인서비스">온라인서비스</a>
+                        <ul class="submenu">
+                            <li><a href="@Url.Action("smartgive")" title="온라인서비스(SmartGive) 소개">온라인서비스(SmartGive) 소개</a></li>
+                            <li><a href="@Url.Action("smartgive2")" title="온라인서비스 옵션">온라인서비스 옵션</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="@Url.Action("coaching")" title="스마트코칭">스마트코칭</a></li>
+                    <li>
+                        <a href="@Url.Action("about1")" title="About">About</a>
+                        <ul class="submenu">
+                            <li><a href="@Url.Action("about1")" title="미션/비전">미션/비전</a></li>
+                            <li><a href="@Url.Action("about2")" title="사용단체">사용단체</a></li>
+                            <li><a href="@Url.Action("about3")" title="오시는길">오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="gnb_bg"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/script.js"></script>

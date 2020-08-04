@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Donation page">
+    <meta name="keywords" content="Donation, gift">
+    <meta name="author" content="Smartraiser">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/content/css/default.css">
+    <link rel="stylesheet" href="~/content/css/bootstrap.css">
+    <link rel="stylesheet" href="~/content/css/common.css" >
+    <link rel="stylesheet" href="~/content/css/style.css" >
+    <link rel="stylesheet" href="~/content/css/main.css" />
+    <link rel="stylesheet" href="~/content/css/common.css" />
+
+    <script src="~/js/jquery-1.12.4.min.js"></script>
+    <script src="~/js/jquery.menu.js"></script>
+    <script src="~/js/common.js"></script>
+    <script src="~/js/wrest.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138214632-2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138214632-2');
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDWBJS8');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+
+<body>
+    <link rel="stylesheet" href="~/content/css/main.css" />
+    <link rel="stylesheet" href="~/content/css/common.css" />
+    @Html.Partial("nav")
+    @RenderBody()
+    <script src="~/js/bootstrap.js"></script>
+    <!-- } 콘텐츠 끝 -->
+    <!-- quick menu -->
+    <div class="quick hidden-xs" id="quicknav">
+        <ul>
+            <li>
+                <a href="https://talk.naver.com/WC9P4Z" target="_blank" onclick="gtag('event', '톡톡문의 클릭', {'event_category': '톡톡문의', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/btn01.png"></a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/smartraiser/221450592729" target="_blank" onclick="gtag('event', 'QnA 클릭', {'event_category': 'QnA', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/btn02.png"></a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/smartraiser" target="_blank" onclick="gtag('event', '블로그 클릭', {'event_category': '블로그', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/btn03.png"></a>
+            </li>
+            <li>
+                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8079" target="_blank" onclick="gtag('event', '우리단체 진단하기 클릭', {'event_category': '우리단체 진단하기', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/btn04.png"></a>
+            </li>
+            @*<li>
+                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/newsletter/subscribe" target="_blank" onclick="gtag('event', '구독하기 클릭', {'event_category': '구독하기', 'event_label': '@ViewBag.Title' });">뉴스레터구독</a>
+            </li>*@
+            <li>
+                <a href="#"><img src="~/content/images/quick/top_btn.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="quick visible-xs">
+        <ul>
+            <li>
+                <a href="https://talk.naver.com/WC9P4Z" target="_blank" onclick="gtag('event', '톡톡문의 클릭', {'event_category': '톡톡문의', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/mbtn01.png"></a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/smartraiser/221450592729" target="_blank" onclick="gtag('event', 'QnA 클릭', {'event_category': 'QnA', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/mbtn02.png"></a>
+            </li>
+            <li>
+                <a href="https://blog.naver.com/smartraiser" target="_blank" onclick="gtag('event', '블로그 클릭', {'event_category': '블로그', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/mbtn03.png"></a>
+            </li>
+            <li>
+                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8079" target="_blank" onclick="gtag('event', '우리단체 진단하기 클릭', {'event_category': '우리단체 진단하기', 'event_label': '@ViewBag.Title' });"><img src="~/content/images/quick/mbtn04.png"></a>
+            </li>
+            @*<li>
+                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/newsletter/subscribe" target="_blank" onclick="gtag('event', '구독하기 클릭', {'event_category': '구독하기', 'event_label': '@ViewBag.Title' });">뉴스레터구독</a>
+            </li>*@
+            <li>
+                <a href="#"><img src="~/content/images/quick/m_top.png"></a>
+            </li>
+        </ul>   
+    </div>
+    <!-- 하단 시작 { -->
+    <div id="ft">
+        <div class="container">
+            <div class="col-sm-4 text-center">
+                <h1><img src="~/content/images/footer_logo.png" alt="" /></h1>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    대표자명.안 철 |  사업자등록번호.105-87-67103 |  e-mail.info@smartraiser.co.kr | <span></span>
+                    주소. 03140) 서울시 종로구 삼일대로 428, 500호 (낙원동, 낙원상가)|  TEL. 070-4010-7728 | <span></span>
+                    copyright®  SMARTRAISER  ALL RIGHTS RESERVED
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- } 하단 끝 -->
+    <script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+    </script>
+    <!-- <div id="quickwrap"><a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8079" target="_blank"><img src="/images/quick.png" class="pdone"><img src="/images/quickmb.png" class="mdone"></a></div> -->
+
+</body>
+</html>

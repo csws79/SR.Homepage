@@ -1,0 +1,227 @@
+﻿@charset "utf-8";
+
+/* 초기화 */
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(/content/css/font/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/content/css/font/NotoSansKR-Regular.woff) format('woff'),
+        url(/content/css/font/NotoSansKR-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url(/content/css/font/NotoSansKR-Medium.woff2) format('woff2'),
+        url(/content/css/font/NotoSansKR-Medium.woff) format('woff'),
+        url(/content/css/font/NotoSansKR-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 600;
+   src: url(/content/css/font/NotoSansKR-Bold.woff2) format('woff2'),
+        url(/content/css/font/NotoSansKR-Bold.woff) format('woff'),
+        url(/content/css/font/NotoSansKR-Bold.otf) format('opentype');
+ }
+ 
+ @font-face{font-family:nm;
+src:url('/content/css/font/NanumMyeongjo.eot');src:local('?'),
+url('/content/css/font/NanumMyeongjo.woff') format('woff'),
+url('/content/css/font/NanumMyeongjo.ttf') format('truetype'),
+url('/content/css/font/NanumMyeongjo.svg#webfontdeSVIj0D') format('svg')} 
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {overflow-x:hidden;height:100%;}
+body {height:100%;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	font-family:"Noto Sans KR",Dotum, Arial, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+section {height:100%;}
+body {
+	
+	font-family:"Noto Sans KR",Dotum, Arial, sans-serif;
+	font-size:17px;
+	color:#666;
+	background:#fff;
+	line-height:1.8em;
+}
+@media all and (max-width: 768px) {
+body,p {
+	line-height:1.5
+	em;
+	font-size:14px;
+}
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img, fieldset {
+	border:0;
+}
+input, select, textarea {
+	line-height:1.2; vertical-align:middle;
+}
+input:focus {border:1px solid #b37d26;-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
+
+
+body, table, th, td, input,
+textarea, button, select {
+	font-family:"Noto Sans KR",Dotum, Arial, sans-serif;
+	font-size:17px;
+	color:#666;
+}
+@media all and (max-width: 768px) {
+textarea, button, select {
+	font-size:14px;
+}
+body, table, th, td, input,
+textarea, button, select {
+	font-size:14px;
+}
+}
+address, caption, cite, code,
+dfn, em, var {
+	font-style:normal;
+	font-weight:normal;
+}
+label {
+	cursor:pointer;
+}
+/* For Screen Reader */
+legend {
+	display:none;
+	visibility:hidden;
+}
+/* For Screen Reader */
+caption {
+	display:none;
+	visibility:hidden;
+}
+a { color:#bfbbbb; text-decoration:none;-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out; }
+a:active, a:hover, a:focus { text-decoration:none; }
+a:hover { color:#bfbbbb; }
+a:hover, a:focus, a:active {-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -ms-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out; transition:all 0.2s ease-in-out;}
+
+.clboth {clear:both;}
+.bg_sec {background:#f5f5f5;}
+.bg_sec_green {background:#194c70;color:#fff;}
+.bg_sec_1 {background:#d0dee8;}
+.bg_sec_2 {background:url(../images/img09.png) no-repeat;background-size:cover;}
+
+
+.alc {text-align:center !important;}
+.all {text-align:left !important;}
+.alr {text-align:right;}
+.f_w {color:#fff !important;}
+.pdt30 {padding-top:30px;}
+.pd60 {padding-top:70px;padding-bottom:70px;}
+.pd60:after {display:block;visibility:hidden;clear:both;content:""}
+.pd601 {padding-top:120px;padding-bottom:10px;}
+.pd601:after {display:block;visibility:hidden;clear:both;content:""}
+.mrt20 {margin-bottom:20px;}
+.mrt40 {margin-bottom:40px !important;}
+
+.point_c1 {color:#00639f !important;}
+
+.f_22 {font-size:22px;}
+.f_16_s {font-size:16px;font-weight:600;color:#222;}
+.f_18_s {font-size:22px;font-weight:600;color:#222;}
+.f_22_s {font-size:24px;font-weight:600;color:#222;}
+.f_32_s {font-size:30px;font-weight:600;color:#222;}
+.f_14 {font-size:14px;}
+@media all and (max-width: 768px) {
+.pd60 {padding-top:40px;padding-bottom:40px;}
+.f_22 {font-size:13px;}
+.f_16_s {font-size:13px;}
+.f_18_s {font-size:15px;}
+.f_22_s {font-size:18px;}
+.f_32_s {font-size:24px;}
+.mb10 {margin-bottom:10px;}
+.f_14 {font-size:11px;}
+}
+
+/*2017.12.03 추가분 ms*/
+.ellipsis {text-overflow:ellipsis;white-space:nowrap;overflow:hidden !important;}
+
+
+
+
+
+@-webkit-keyframes movTop {0% {opacity:0;margin-top:20px}100% {opacity:1;margin-top:0;}}
+@-o-keyframes movTop {0% {opacity:0;margin-top:20px}100% {opacity:1;margin-top:0;}}
+@-ms-keyframes movTop {0% {opacity:0;margin-top:20px}100% {opacity:1;margin-top:0;}}
+@keyframes movTop {0% {opacity:0;margin-top:20px}100% {opacity:1;margin-top:0;}}
+@-webkit-keyframes labLeft {0% {opacity:0;margin-left:50px}100% {opacity:1;margin-left:0;}}
+@-o-keyframes labLeft {0%{opacity:0;margin-left:50px}100% {opacity:1;margin-left:0;}}
+@-ms-keyframes labLeft {0% {opacity:0;margin-left:50px}100% {opacity:1;margin-left:0;}}
+@keyframes labLeft {0%{opacity:0;margin-left:50px}100% {opacity:1;margin-left:0;}}
+
+
+@-webkit-keyframes mvBg {0% {left:30%;opacity:0}to {left:0%;opacity:1}}
+@-ms-keyframes mvBg {0% {left:30%;opacity:0}to {left:0%;opacity:1}}
+@keyframes mvBg {0% {left:30%;opacity:0}to {left:0%;opacity:1}}
+
+@-webkit-keyframes mvBg2 {10% {left:100%;opacity:0}to {left:-30%;opacity:1}}
+@-ms-keyframes mvBg2 {10% {left:100%;opacity:0}to {left:-30%;opacity:1}}
+@keyframes mvBg2 {10% {left:100%;opacity:0}to {left:-30%;opacity:1}}
+
+@-webkit-keyframes mvtxt {0% {margin-top:0px;opacity:0;} 30% {margin-top:-35px;opacity:0;}to {margin-top:-70px;opacity:1;}}
+@-ms-keyframes mvtxt {0% {margin-top:0px;opacity:0;}30% {margin-top:-35px;opacity:0;}to {margin-top:-70px;opacity:1;}}
+@keyframes mvtxt {0% {margin-top:0px;opacity:0;}30% {margin-top:-35px;opacity:0;}to {margin-top:-70px;opacity:1;}}
+
+@-webkit-keyframes mvtxt2 {0% {margin-top:30px;opacity:0;} 50% {margin-top:30px;opacity:0;}to {margin-top:0;opacity:1;}}
+@-ms-keyframes mvtxt2 {0% {margin-top:30px;opacity:0;}50% {margin-top:30px;opacity:0;}to {margin-top:0;opacity:1;}}
+@keyframes mvtxt2 {0% {margin-top:30px;opacity:0;}50% {margin-top:30px;opacity:0;}to {margin-top:0;opacity:1;}}
+
+@-webkit-keyframes fadeIn { 0% {opacity:0;} 50% {opacity:0;} 100% {opacity:1}}
+@-ms-keyframes fadeIn { 0% {opacity:0;} 50% {opacity:0;} 100% {opacity:1}}
+@-o-keyframes fadeIn { 0% {opacity:0;}50% {opacity:0;} 100% {opacity:1}}
+@keyframes fadeIn { 0% {opacity:0;}50% {opacity:0;} 100% {opacity:1}}
+
+
+.animatable {visibility: hidden;-webkit-animation-play-state: paused;-moz-animation-play-state: paused;-ms-animation-play-state: paused;-o-animation-play-state: paused;animation-play-state: paused; }
+.animated {visibility: visible;
+	-webkit-animation-fill-mode: backward;-moz-animation-fill-mode: backward;-ms-animation-fill-mode: backward;-o-animation-fill-mode: backward;animation-fill-mode: backward;
+	-webkit-animation-timing-function: linear;animation-timing-function: linear;
+	-webkit-animation-duration:7s;-moz-animation-duration:7s;-ms-animation-duration:7s;-o-animation-duration:7s;animation-duration:7s;
+	-webkit-animation-play-state: running;-moz-animation-play-state: running;-ms-animation-play-state: running;-o-animation-play-state: running;animation-play-state: running;
+}
+
