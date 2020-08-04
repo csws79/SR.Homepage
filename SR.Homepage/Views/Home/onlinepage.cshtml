@@ -1,90 +1,22 @@
-﻿
-@{
-    ViewBag.Title = "스마트레이저 기능";
+﻿@{
+    ViewBag.Title = "연동 페이지 제작";
     Layout = "~/Views/shared/_Layout.cshtml";
 }
 
-    <div class="subvisual">
-        <p>성공적인 모금관리 스마트레이저</p>
-        <h3>SmartRaiser</h3>
+
+<div class="subvisual">
+    <p>성공적인 모금관리 스마트레이저</p>
+    <h3>SmartRaiser</h3>
+</div>
+
+<div class="container text-center pd60">
+    <h3 class="title">메일링</h3>
+    <p class="f_18_s text-center">SmartGive 다섯가지 온라인 페이지와 연동 방식에대해 설명드립니다. </p>
+</div>
+
+
+<div class="container" style="margin:30px auto 100px;">
+    <div class="video_wrap">
+        <iframe src="https://www.youtube.com/embed/-QfdZas3I_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
-    <div class="container text-center pd60">
-        <h3 class="title">기능</h3>
-    </div>
-
-    <div class="container-field ">
-        <div class="container">
-
-            <p class="f_22 text-center">스마트레이저는 아래의 세 가지 핵심적 기능으로 <strong style="color:#eb6100;">단체의 모금활동을 지원</strong>합니다.</p>
-
-            <div class="spec1">
-                <img src="~/content/images/img03.png" class="img-responsive" />
-                <strong>모금행정 업무 자동화 시스템 도입</strong>
-                <p class="f_16_s pdt30">모금 행정 업무<br />= 번거롭고 실수가 생길 수 있는 업무</p>
-                <p>
-                    “매월 수백, 수천의 출금데이터 확인/
-                    금결원에 자료제출/미납데이터 확인 후 재출금 요청/ 월별 기부 내역 추출 등의 업무를
-                    이제 스마트레이저가 합니다.”
-                </p>
-            </div>
-
-            <div class="spec1">
-                <img src="~/content/images/img02.png" class="img-responsive" />
-                <strong>기부금 증대 전략을 수립 가능</strong>
-                <p class="f_16_s pdt30">기부금 증대 전략 수립<br />=모금담당자의 창의적, 지적, 정서적인 업무</p>
-                <p>
-                    모금 담당자가 기부현황, 기부자의 양태 등을 분석하여
-                    새로운 기부자 개발/다양한 기부 요청하기 위한
-                    전략 수립 가능
-                </p>
-            </div>
-
-            <div class="spec1">
-                <img src="~/content/images/img04.png" class="img-responsive" />
-                <strong>모금가의 비서</strong>
-                <p class="f_16_s pdt30">모금가의 to do list 작성 및 알림</p>
-                <p>모금 기획, 잠재기부자 찾기, 기부자 미팅,  적절한 기부 요청 실행이 원활하도록 지원</p>
-            </div>
-
-            <p style="clear:both;" class="f_22 text-center">꼭 모금가가 해야 할 기부자와의 개별적 커뮤니케이션 외의 관리업무는 스마트레이저에 맡기세요.</p>
-
-        </div>
-    </div>
-
-    <div class="container-field pd601 bg_sec" style="margin-top:60px;">
-        <div class="container">
-            <h4 class="title" style="margin-bottom:100px;">모금행정 업무 자동화 시스템 도입</h4>
-
-            <div class="spec4"><p class="img"><img src="~/content/images/section_04_img1.png" alt=""></p><strong>CMS/신용카드 자동 입출금 관리</strong><p>스마트레이저에 입력된 CMS/신용카드 기부자의 입출금 관리는 자동으로 이루어지며 입출금 내역에 대한 세부정보는 쉽게 확인 가능합니다.</p></div>
-            <div class="spec4"><p class="img"><img src="~/content/images/section_04_img2.png" alt=""></p><strong>메일링(SMS/메일) 자동 전송</strong><p>스마트레이저에 등록된 구성원이라면 어떤 조건이든지 원하는 조건에 따라 메일 및 메시지를 전송할 수 있습니다.</p><p>특정 조건을 설정해두면 담당자의 추가 반복 작업없이 해당 대상자들에게 자동으로 메일 및 메시지를 전송합니다. </p><p>ex) 신규 기부 감사 문자, 미납 안내 문자, 출금 전 안내 문자 등</p></div>
-            <div class="spec4"><p class="img"><img src="~/content/images/section_04_img3.png" alt=""></p><strong>스마트레이저 기록 저장 및 확인</strong><p>스마트레이저에 접속한 사용자 로그인 기록 및 사용자가 변경한 데이터에 대한 기록은 자동 저장되며 실시간으로 확인 가능합니다.</p></div>
-            <div class="spec4"><p class="img"><img src="~/content/images/section_04_img4.png" alt=""></p><strong>사용자 그룹별 접근 권한 차등 부여</strong><p>스마트레이저에 접근하는 사용자들을 그룹화하여 데이터의 접근 권한을 차등 부여할 수 있습니다.</p></div>
-        </div>
-    </div>
-
-    <div class="container-field pd60">
-        <div class="container">
-
-            <p class="f_22_s text-center">데이터 분석</p>
-            <ul class="dot2 pdt30">
-                <li>입력한 모든 정보는 원하는 기준에 따라 자유자재로 검색, 출력 및 분석 가능</li>
-                <li>기부/구성원/모금활동 등 약 20여 종의 통계분석 보고서 제공 및 다운로드 기능</li>
-                <li>조건별로 데이터 조회 및 검색가능한 분석 및 추출 메뉴<strong style="color:#eb6100;">‘(맞춤형 보고서: 쿼리)’</strong> 사용</li>
-                <li class="point_c1">단체의 방대한 데이터에 대해 특정 조건으로 분석,추출하여 모금에 필요한 모든 정보를 자유롭게 활용 가능</li>
-            </ul>
-            <p class="pdt30 f_14">* 보고서 종류) 기부자 특징 별 보고서, 기부금액별 분석보고서, 미납/불능 시기별 분석 보고서, 구성원보고서 등</p>
-
-            <hr class="style-two" />
-            <h4 class="text-center pdt30">통계 분석 보고서 예시) 정기 기부 현황 보고서 / 모금활동별 기부 약정 성과 분석 보고서</h4>
-            <img src="~/content/images/img4_1.png" alt="" class="img-responsive" />
-            <img src="~/content/images/img4_2.png" alt="" class="img-responsive" />
-        </div>
-
-
-    </div>
-
-    <div class="container pd60">
-        <p class="f_22_s text-center">펀드레이저의 업무 지원</p>
-        <p class="text-center pdt30"><img src="~/content/images/img4_3.png" class="img-responsive" /></p>
-    </div>
+</div>
