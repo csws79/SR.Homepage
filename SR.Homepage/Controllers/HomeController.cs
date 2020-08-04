@@ -53,5 +53,65 @@ namespace SR.Homepage.Controllers
         {
             return View();
         }
+
+        public ActionResult cmspg()
+        {
+            return View();
+        }
+
+        public ActionResult diagnosis()
+        {
+            return View();
+        }
+
+        public ActionResult faq()
+        {
+            return View();
+        }
+
+        public ActionResult feature()
+        {
+            return View();
+        }
+
+        public ActionResult interlock()
+        {
+            return View();
+        }
+
+        public ActionResult mailing()
+        {
+            return View();
+        }
+
+        public ActionResult member()
+        {
+            return View();
+        }
+
+        public ActionResult notice()
+        {
+            return View();
+        }
+        
+        public ActionResult onlinepage()
+        {
+            return View();
+        }
+
+        public ActionResult question()
+        {
+            return View();
+        }
+
+        public ActionResult receipt()
+        {
+            return View();
+        }
+
+        public ActionResult relation()
+        {
+            return View();
+        }
     }
 }
