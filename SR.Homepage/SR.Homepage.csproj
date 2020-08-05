@@ -280,6 +280,8 @@
     <Content Include="Views\Home\question.cshtml" />
     <Content Include="Views\Home\receipt.cshtml" />
     <Content Include="Views\Home\relation.cshtml" />
+    <Content Include="Views\Home\faq_dona.cshtml" />
+    <Content Include="Views\Home\faq_func.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
