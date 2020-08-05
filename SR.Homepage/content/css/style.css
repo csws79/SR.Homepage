@@ -43,7 +43,7 @@
   z-index:999;
   
 }
-.menu .gnb_bg {display: none;background:#fff;height:150px;position:absolute;top:123px;left:0;width:100%;z-index:1;border-bottom: 1px solid #d7d7d7;}
+.menu .gnb_bg {display: none;background:#fff;height:230px;position:absolute;top:123px;left:0;width:100%;z-index:1;border-bottom: 1px solid #d7d7d7;}
 .menu ul {
   padding: 0px;
   margin: -1px auto;
