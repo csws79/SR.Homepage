@@ -113,5 +113,14 @@ namespace SR.Homepage.Controllers
         {
             return View();
         }
+        public ActionResult faq_dona()
+        {
+            return View();
+        }
+        public ActionResult faq_func()
+        {
+            return View();
+        }
+
     }
 }
