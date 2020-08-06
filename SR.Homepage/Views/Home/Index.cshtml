@@ -4,259 +4,319 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div id="fullpage">
 
-    <div class="section active" id="section0">
-        <div class="container">
-            <div class="section0_txt col-sm-5">
-                <h3>성공적인 모금관리 스마트레이저</h3>
-                <h2>기부자 관계관리를 통해<br />단체의 모금이 증대합니다.</h2>
 
-                <p>
-                    모금에 적합한 바로 그 솔루션!<br />
-                    클라우드방식의 국내 최초 모금 소프트웨어<br />
-                    비영리 단체의 모금파트너
-                </p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-                <a href="@Url.Action("about1")">+ MORE</a>
-            </div>
-            <div class="col-sm-7">
-                <div class="section0_pic">
-                    <img src="~/content/images/section_01_img.png" alt="" />
-                </div>
-            </div>
+<script language="JavaScript">
+	$(document).ready(function() {
+		var $banner = $(".banner").find("ul");
+
+		var $bannerWidth = $banner.children().outerWidth();//이미지의 폭
+		var $bannerHeight = $banner.children().outerHeight(); // 높이
+		var $length = $banner.children().length;//이미지의 갯수
+		var rollingId;
+
+		//정해진 초마다 함수 실행
+		rollingId = setInterval(function() { rollingStart(); }, 3000);//다음 이미지로 롤링 애니메이션 할 시간차
+
+		function rollingStart() {
+			$banner.css("width", $bannerWidth * $length + "px");
+			$banner.css("height", $bannerHeight + "px");
+			$banner.animate({left: - $bannerWidth + "px"}, 1500, function() {
+				$(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+				$(this).find("li:first").remove();
+				$(this).css("left", 0);
+			});
+		}
+	});
+</script>
+
+<div class="section" id="section3">
+    <div class="container">
+        <div class="banner">
+            <ul>
+                <li><img src="~/content/images/banner1.jpg" width="1080px" height="610px"></li>
+                <li><img src="~/content/images/banner2.jpg" width="1080px" height="610px"></li>
+                <li><img src="~/content/images/banner3.jpg" width="1080px" height="610px"></li>
+            </ul>
         </div>
     </div>
-    <!--//section0-->
-    <!--section2-->
-    <div class="section" id="section2">
-        <div class="container text-center">
-            <h2>스마트레이저 서비스</h2>
-            <p>스마트레이저에서는 단체의 특성에 맞는 다양한 서비스를 제공합니다.</p>
 
-            <div class="col-sm-4">
-                <img src="~/content/images/section_02_img1.png" />
-                <div class="box">
+    <div class="container text-center">
+        <div class="col-sm-4">
+            <img src="~/content/images/section_02_img1.png" />
+            <div class="box">
+                <a href="@Url.Action("smartraiser1")">
                     <h3>스마트레이저란?</h3>
                     <p>
                         스마트레이저는 기부자 및 기부금 관리는 물론, 단체의 모금활동을 스마트하게 연계하고 통합하여 관리합니다.
                         스마트레이저의 자동화기능은 담당자들의 업무를 대신하므로 단순업무에 투여되는 시간과 노력을 줄일 수 있습니다.
                     </p>
+                </a>
 
-                </div>
-                <p class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
             </div>
-            <div class="col-sm-4">
-                <img src="~/content/images/section_02_img2.png" />
-                <div class="box">
-                    <h3>온라인서비스</h3>
-                    <p>이제 기부도 온라인을 빼고 이야기할 수 없습니다. 온라인서비스는 기부자와 단체를 연결해주는 온라인 신청페이지로 단체 홈페이지로 신청한 기부신청, 활동신청을 실시간으로 확인하고 저장합니다.</p>
-
-                    <ul>
-                        <li>SmartGive(온라인 기부페이지)</li>
-                        <li>SmartVolunteer(온라인 자원봉사신청 페이지)</li>
-                        <li>SmartPartner(온라인 결연 관리 페이지)</li>
-                        <li>SmartSurvey(온라인 참여자 의견 조사)</li>
-                        <li>SmartGift(온라인 후원물품관리)</li>
-                    </ul>
-                </div>
-                <p class="link"><a href="@Url.Action("smartgive")">READ MORE</a></p>
-            </div>
-            <div class="col-sm-4">
-                <img src="~/content/images/section_02_img3.png" />
-                <div class="box">
-                    <h3>스마트코칭</h3>
-                    <p>스마트레이저는 100년 역사와  전문성을 자랑하는 Brakeley와 ㈜도움과나눔의 실제적인 모금 컨설팅 경험과 지식을 담아 탄생하였습니다. 이러한 노하우를 바탕으로 이제, 스마트레이저에서 단체 진단 및 모금 코칭을 지원합니다.</p>
-                    <p>스마트코칭을 통해 우리 단체의 현안 진단 및 역량 강화를 시도할 수 있습니다.</p>
-                    <ul>
-                        <li>단체 진단 및 컨설팅</li>
-                        <li>역량강화를 위한 코칭 및 워크샵</li>
-                        <li>스마트레이저를 활용하는 모금 실행 코칭</li>
-                    </ul>
-                </div>
-                <p class="link"><a href="@Url.Action("coaching")">READ MORE</a></p>
-            </div>
+            <p class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
         </div>
+        <div class="col-sm-4">
+            <img src="~/content/images/section_02_img2.png" />
+            <div class="box">
+                <h3>온라인서비스</h3>
+                <p>이제 기부도 온라인을 빼고 이야기할 수 없습니다. 온라인서비스는 기부자와 단체를 연결해주는 온라인 신청페이지로 단체 홈페이지로 신청한 기부신청, 활동신청을 실시간으로 확인하고 저장합니다.</p>
 
-    </div>
-    <!--//section2-->
-
-    <!--section3-->
-    <div class="section" id="section3">
-        <div class="container text-center">
-            <h2>스마트레이저는</h2>
-            <p>세 가지의 핵심적 기능으로 단체의 모금 업무를 지원합니다.</p>
-
-            <div class="col-sm-4">
-                <img src="~/content/images/section_03_img1.png" />
-                <div class="box">
-                    <h3>모금행정 업무 자동화 시스템</h3>
-                    <p><strong>번거롭고 실수가 생길 수 있는<br />단순반복적 모금 행정 업무</strong></p>
-                    <p>
-                        매월 확인해야하는 출금데이터 확인 및 출금요청,<br />
-                        항상 똑같이 발송되는 기부자 대상 메일링 등<br />
-                        매번 반복되는 업무를 이제 스마트레이저가 합니다.
-                    </p>
-                </div>
             </div>
-
-            <div class="col-sm-4">
-                <img src="~/content/images/section_03_img2.png" />
-                <div class="box">
-                    <h3>기부 현황 파악 및 증대 전략 수립을<br />지원하는 분석 보고서</h3>
-                    <p><strong>우리 단체의 모금활동을 한발짝<br />더 내딛게 도와주는 분석 및 보고 업무</strong></p>
-                    <p>모금담당자가 기부현황, 기부자의 특성들을 분석하여 새로운 기부자 개발/다양한 기부요청을 위한 전략 수립이 가능합니다.</p>
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <img src="~/content/images/section_03_img3.png" />
-                <div class="box">
-                    <h3>모금가의 비서</h3>
-                    <p><strong>모금가의 전반적인 업무 지원</strong></p>
-                    <p>
-                        내가 만나야 할 기부자, 잠재기부자 찾기,<br />
-                        캠페인 관리와 모금 기획, 기부자 미팅, 적절한 기부요청<br />
-                        실행이 원활하도록 지원합니다.
-                    </p>
-                </div>
-            </div>
-
-            <p style="clear:both;" class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
-        </div>
-    </div>
-    <!--//section3-->
-    <!--section4-->
-    <div class="section" id="section4">
-        <div class="container text-center">
-            <h2>온라인서비스</h2>
-            <p>
-                온라인서비스(SmartGive)는 기부자와 단체를 연결합니다.<br />
-                단체와 기부자가 한걸음 더 가까워지는 통로가 되어줄 것입니다.
-            </p>
-            <img src="~/content/images/section_04_img.png" alt="" />
             <p class="link"><a href="@Url.Action("smartgive")">READ MORE</a></p>
         </div>
-    </div>
-    <!--//section4-->
-    <!--section5-->
-    <div class="section" id="section5">
-        <div class="container text-center">
-            <h2>스마트코칭</h2>
-            <p>단체 비전과 미션을 기반으로 단체의 현안을 해결하는 진단 및 컨설팅 서비스를 진행합니다.</p>
-            <div class="col-sm-4">
-                <img src="~/content/images/section_05_img1.png" alt="" />
-            </div>
-            <div class="col-sm-4">
-                <img src="~/content/images/section_05_img2.png" alt="" />
-            </div>
-            <div class="col-sm-4">
-                <img src="~/content/images/section_05_img3.png" alt="" />
+        <div class="col-sm-4">
+            <img src="~/content/images/section_02_img3.png" />
+            <div class="box">
+                <h3>스마트코칭</h3>
+                <p>스마트레이저는 100년 역사와  전문성을 자랑하는 Brakeley와 ㈜도움과나눔의 실제적인 모금 컨설팅 경험과 지식을 담아 탄생하였습니다. 이러한 노하우를 바탕으로 이제, 스마트레이저에서 단체 진단 및 모금 코칭을 지원합니다.</p>
+                <p>스마트코칭을 통해 우리 단체의 현안 진단 및 역량 강화를 시도할 수 있습니다.</p>
+
             </div>
             <p class="link"><a href="@Url.Action("coaching")">READ MORE</a></p>
         </div>
     </div>
-    <!--//section5-->
-    <!--section1-->
-    <div class="section" id="section1">
-        <div class="container text-center">
-            <h2>사용단체</h2>
-            <!--p>스마트레이저는 모금 담당자를 도와<br/>
-            기부자를 더 많이 초대하고 기부자가 단체에 깊이 참여하게 하여<br/>
-            “더 오래, 더 다양하게 기부” 하도록 돕습니다.</p-->
-
-            <div class="col-sm-10" style="margin:0 auto;float:none;">
-                <div class="col-sm-31">
-                    <a href="http://www.hamkke.org" target="_blank"><img src="~/content/images/section_02_banner1.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.westart.or.kr" target="_blank"><img src="~/content/images/section_02_banner2.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.hopefoundation.or.kr" target="_blank"><img src="~/content/images/section_02_banner3.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.servingfriends.org" target="_blank"><img src="~/content/images/section_02_banner4.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.noworry.kr" target="_blank"><img src="~/content/images/section_02_banner5.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.relief.or.kr" target="_blank"><img src="~/content/images/section_02_banner6.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.slowfood.or.kr" target="_blank"><img src="~/content/images/section_02_banner7.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.g4w.net" target="_blank"><img src="~/content/images/section_02_banner8.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.taiwhafound.org" target="_blank"><img src="~/content/images/section_02_banner9.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.greenasia.kr" target="_blank"><img src="~/content/images/section_02_banner10.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://msf.or.kr" target="_blank"><img src="~/content/images/section_02_banner11.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.worldtogether.or.kr/ko" target="_blank"><img src="~/content/images/section_02_banner12.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.churchinneed.or.kr" target="_blank"><img src="~/content/images/section_02_banner13.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.pusan.ac.kr" target="_blank"><img src="~/content/images/section_02_banner14.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://volunteeringculture.or.kr" target="_blank"><img src="~/content/images/section_02_banner15.png" alt="" /></a>
-                </div>
-                <div class="col-sm-31">
-                    <a href="http://www.smu.ac.kr" target="_blank"><img src="~/content/images/section_02_banner16.png" alt="" /></a>
-                </div>
-                <!--div class="col-sm-31">
-                    <a href="http://www.jjang2.or.kr" target="_blank"><img src="~/content/images/section_02_banner17.png"  alt=""/></a>
-                </div-->
-            </div>
-
-            <p class="link"><a href="@Url.Action("about2")">READ MORE</a></p>
-        </div>
-    </div>
-    <!--//section1-->
-    <!--sectionAdditional-->
-    <div class="section" id="section5">
-        <div class="container text-center">
-            <h2>스마트레이저가 필요한 단체</h2>
-            <p>
-                모금을 막 시작한 단계이신가요? <br />
-                기부자 관리의 필요성을 느끼고 계신가요?<br />
-                많은 데이터를 대신 관리해 줄 프로그램을 찾고계신가요?<br />
-            </p>
-            <!--p>
-            <h2>주기적인 업데이트 깔끔한 인터페이스     CMS와 완벽 연동    출금동의서 저장 기능</h2>
-                    </p-->
-            <img src="~/content/images/main_review.png" />
-            <p class="link"><a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8079" target="_blank">우리 단체 진단하러 가기</a></p>
-        </div>
-    </div>
-    <!--//sectionAdditional-->
-    <!--section6-->
-    <div class="section" id="section6">
-        <div class="container">
-            <h2 class="text-center">CONTACT US</h2>
-
-            <div class="col-sm-7">
-                <img src="~/content/images/section_06_img.png" alt="" />
-            </div>
-            <div class="col-sm-5">
-                <p>성공적인 모금관리,<br /><strong>스마트레이저</strong>와 함께하세요!</p>
-                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8078" target="_blank" onclick="gtag('event', '스마트레이저에 문의하기 클릭', {'event_category': '스마트레이저에 문의하기', 'event_label': '@ViewBag.Title' });">스마트레이저에 문의하기</a>
-                <a href="https://cs.smartraiser.co.kr/api/smartraisercs/newsletter/subscribe" target="_blank" onclick="gtag('event', '뉴스레터 구독 신청하기 클릭', {'event_category': '뉴스레터 구독신청', 'event_label': '@ViewBag.Title' });">뉴스레터 구독 신청하기</a>
-            </div>
-        </div>
-
-    </div>
-    <!--//section6-->
+    
 
 </div>
+
+
+
+    <div id="fullpage">
+
+
+
+        <!--//section0-->
+        <!--section2-->
+        <div class="section" id="section2">
+            <div class="container text-center">
+                <h2>스마트레이저 서비스</h2>
+                <p>스마트레이저에서는 단체의 특성에 맞는 다양한 서비스를 제공합니다.</p>
+
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_02_img1.png" />
+                    <div class="box">
+                        <h3>스마트레이저란?</h3>
+                        <p>
+                            스마트레이저는 기부자 및 기부금 관리는 물론, 단체의 모금활동을 스마트하게 연계하고 통합하여 관리합니다.
+                            스마트레이저의 자동화기능은 담당자들의 업무를 대신하므로 단순업무에 투여되는 시간과 노력을 줄일 수 있습니다.
+                        </p>
+
+                    </div>
+                    <p class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_02_img2.png" />
+                    <div class="box">
+                        <h3>온라인서비스</h3>
+                        <p>이제 기부도 온라인을 빼고 이야기할 수 없습니다. 온라인서비스는 기부자와 단체를 연결해주는 온라인 신청페이지로 단체 홈페이지로 신청한 기부신청, 활동신청을 실시간으로 확인하고 저장합니다.</p>
+
+                        <ul>
+                            <li>SmartGive(온라인 기부페이지)</li>
+                            <li>SmartVolunteer(온라인 자원봉사신청 페이지)</li>
+                            <li>SmartPartner(온라인 결연 관리 페이지)</li>
+                            <li>SmartSurvey(온라인 참여자 의견 조사)</li>
+                            <li>SmartGift(온라인 후원물품관리)</li>
+                        </ul>
+                    </div>
+                    <p class="link"><a href="@Url.Action("smartgive")">READ MORE</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_02_img3.png" />
+                    <div class="box">
+                        <h3>스마트코칭</h3>
+                        <p>스마트레이저는 100년 역사와  전문성을 자랑하는 Brakeley와 ㈜도움과나눔의 실제적인 모금 컨설팅 경험과 지식을 담아 탄생하였습니다. 이러한 노하우를 바탕으로 이제, 스마트레이저에서 단체 진단 및 모금 코칭을 지원합니다.</p>
+                        <p>스마트코칭을 통해 우리 단체의 현안 진단 및 역량 강화를 시도할 수 있습니다.</p>
+                        <ul>
+                            <li>단체 진단 및 컨설팅</li>
+                            <li>역량강화를 위한 코칭 및 워크샵</li>
+                            <li>스마트레이저를 활용하는 모금 실행 코칭</li>
+                        </ul>
+                    </div>
+                    <p class="link"><a href="@Url.Action("coaching")">READ MORE</a></p>
+                </div>
+            </div>
+
+        </div>
+        <!--//section2-->
+        <!--section3-->
+        <div class="section" id="section3">
+            <div class="container text-center">
+                <h2>스마트레이저는</h2>
+                <p>세 가지의 핵심적 기능으로 단체의 모금 업무를 지원합니다.</p>
+
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_03_img1.png" />
+                    <div class="box">
+                        <h3>모금행정 업무 자동화 시스템</h3>
+                        <p><strong>번거롭고 실수가 생길 수 있는<br />단순반복적 모금 행정 업무</strong></p>
+                        <p>
+                            매월 확인해야하는 출금데이터 확인 및 출금요청,<br />
+                            항상 똑같이 발송되는 기부자 대상 메일링 등<br />
+                            매번 반복되는 업무를 이제 스마트레이저가 합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_03_img2.png" />
+                    <div class="box">
+                        <h3>기부 현황 파악 및 증대 전략 수립을<br />지원하는 분석 보고서</h3>
+                        <p><strong>우리 단체의 모금활동을 한발짝<br />더 내딛게 도와주는 분석 및 보고 업무</strong></p>
+                        <p>모금담당자가 기부현황, 기부자의 특성들을 분석하여 새로운 기부자 개발/다양한 기부요청을 위한 전략 수립이 가능합니다.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_03_img3.png" />
+                    <div class="box">
+                        <h3>모금가의 비서</h3>
+                        <p><strong>모금가의 전반적인 업무 지원</strong></p>
+                        <p>
+                            내가 만나야 할 기부자, 잠재기부자 찾기,<br />
+                            캠페인 관리와 모금 기획, 기부자 미팅, 적절한 기부요청<br />
+                            실행이 원활하도록 지원합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <p style="clear:both;" class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
+            </div>
+        </div>
+        <!--//section3-->
+        <!--section4-->
+        <div class="section" id="section4">
+            <div class="container text-center">
+                <h2>온라인서비스</h2>
+                <p>
+                    온라인서비스(SmartGive)는 기부자와 단체를 연결합니다.<br />
+                    단체와 기부자가 한걸음 더 가까워지는 통로가 되어줄 것입니다.
+                </p>
+                <img src="~/content/images/section_04_img.png" alt="" />
+                <p class="link"><a href="@Url.Action("smartgive")">READ MORE</a></p>
+            </div>
+        </div>
+        <!--//section4-->
+        <!--section5-->
+        <div class="section" id="section5">
+            <div class="container text-center">
+                <h2>스마트코칭</h2>
+                <p>단체 비전과 미션을 기반으로 단체의 현안을 해결하는 진단 및 컨설팅 서비스를 진행합니다.</p>
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_05_img1.png" alt="" />
+                </div>
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_05_img2.png" alt="" />
+                </div>
+                <div class="col-sm-4">
+                    <img src="~/content/images/section_05_img3.png" alt="" />
+                </div>
+                <p class="link"><a href="@Url.Action("coaching")">READ MORE</a></p>
+            </div>
+        </div>
+        <!--//section5-->
+        <!--section1-->
+        <div class="section" id="section1">
+            <div class="container text-center">
+                <h2>사용단체</h2>
+                <!--p>스마트레이저는 모금 담당자를 도와<br/>
+                기부자를 더 많이 초대하고 기부자가 단체에 깊이 참여하게 하여<br/>
+                “더 오래, 더 다양하게 기부” 하도록 돕습니다.</p-->
+
+                <div class="col-sm-10" style="margin:0 auto;float:none;">
+                    <div class="col-sm-31">
+                        <a href="http://www.hamkke.org" target="_blank"><img src="~/content/images/section_02_banner1.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.westart.or.kr" target="_blank"><img src="~/content/images/section_02_banner2.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.hopefoundation.or.kr" target="_blank"><img src="~/content/images/section_02_banner3.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.servingfriends.org" target="_blank"><img src="~/content/images/section_02_banner4.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.noworry.kr" target="_blank"><img src="~/content/images/section_02_banner5.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.relief.or.kr" target="_blank"><img src="~/content/images/section_02_banner6.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.slowfood.or.kr" target="_blank"><img src="~/content/images/section_02_banner7.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.g4w.net" target="_blank"><img src="~/content/images/section_02_banner8.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.taiwhafound.org" target="_blank"><img src="~/content/images/section_02_banner9.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.greenasia.kr" target="_blank"><img src="~/content/images/section_02_banner10.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://msf.or.kr" target="_blank"><img src="~/content/images/section_02_banner11.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.worldtogether.or.kr/ko" target="_blank"><img src="~/content/images/section_02_banner12.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.churchinneed.or.kr" target="_blank"><img src="~/content/images/section_02_banner13.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.pusan.ac.kr" target="_blank"><img src="~/content/images/section_02_banner14.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://volunteeringculture.or.kr" target="_blank"><img src="~/content/images/section_02_banner15.png" alt="" /></a>
+                    </div>
+                    <div class="col-sm-31">
+                        <a href="http://www.smu.ac.kr" target="_blank"><img src="~/content/images/section_02_banner16.png" alt="" /></a>
+                    </div>
+                    <!--div class="col-sm-31">
+                        <a href="http://www.jjang2.or.kr" target="_blank"><img src="~/content/images/section_02_banner17.png"  alt=""/></a>
+                    </div-->
+                </div>
+
+                <p class="link"><a href="@Url.Action("about2")">READ MORE</a></p>
+            </div>
+        </div>
+        <!--//section1-->
+        <!--sectionAdditional-->
+        <div class="section" id="section5">
+            <div class="container text-center">
+                <h2>단체 무료 진단</h2>
+                <p>
+                    모금을 막 시작한 단계이신가요? <br />
+                    기부자 관리의 필요성을 느끼고 계신가요?<br />
+                    많은 데이터를 대신 관리해 줄 프로그램을 찾고계신가요?<br />
+                </p>
+                <!--p>
+                <h2>주기적인 업데이트 깔끔한 인터페이스     CMS와 완벽 연동    출금동의서 저장 기능</h2>
+                        </p-->
+                <img src="~/content/images/main_review.png" />
+                <p class="link"><a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8079" target="_blank">우리 단체 진단하러 가기</a></p>
+            </div>
+        </div>
+        <!--//sectionAdditional-->
+        <!--section6-->
+        <div class="section" id="section6">
+            <div class="container">
+                <h2 class="text-center">CONTACT US</h2>
+
+                <div class="col-sm-7">
+                    <img src="~/content/images/section_06_img.png" alt="" />
+                </div>
+                <div class="col-sm-5">
+                    <p>성공적인 모금관리,<br /><strong>스마트레이저</strong>와 함께하세요!</p>
+                    <a href="https://cs.smartraiser.co.kr/api/smartraisercs/survey/Survey?id=8078" target="_blank" onclick="gtag('event', '스마트레이저에 문의하기 클릭', {'event_category': '스마트레이저에 문의하기', 'event_label': '@ViewBag.Title' });">스마트레이저에 문의하기</a>
+                    <a href="https://cs.smartraiser.co.kr/api/smartraisercs/newsletter/subscribe" target="_blank" onclick="gtag('event', '뉴스레터 구독 신청하기 클릭', {'event_category': '뉴스레터 구독신청', 'event_label': '@ViewBag.Title' });">뉴스레터 구독 신청하기</a>
+                </div>
+            </div>
+
+        </div>
+        <!--//section6-->
+
+    </div>
 

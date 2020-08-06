@@ -359,8 +359,7 @@ a.menu-link.active:after { content: "\2715"; }
 iframe {position:absolute; width:100%; height:100%;}
 
 
-
-
+/*FAQ 내부 메뉴*/
 
 .menuNav li a:hover {
     border-radius:5px;
@@ -389,3 +388,11 @@ iframe {position:absolute; width:100%; height:100%;}
     font-size:14px;
     text-decoration:none;
 }
+
+
+/*슬라이드 배너*/
+
+.banner {position: relative; width: 1080px; height: 610px; top: 60px;  margin:0 auto; padding:15px; overflow: hidden;}
+.banner ul {position: absolute; margin: 0px; padding:0; list-style: none; }
+.banner ul li {float: left; width: 1080px; height: 610px; margin:0; padding:0;}
+
