@@ -100,6 +100,7 @@
     <Content Include="content\css\jquery.bxslider.css" />
     <Content Include="content\css\main.css" />
     <Content Include="content\css\mobile.css" />
+    <Content Include="content\css\responsiveslides.css" />
     <Content Include="content\css\style.css" />
     <Content Include="content\images\1_SmartGive.png" />
     <Content Include="content\images\2_SmartVolunteer.png" />
@@ -217,10 +218,13 @@
     <Content Include="js\jquery.menu.js" />
     <Content Include="js\jquery.register_form.js" />
     <Content Include="js\jquery.sms_paging.js" />
+    <Content Include="js\jquery.ulslide.js" />
     <Content Include="js\kakaolink.js" />
     <Content Include="js\main.js" />
     <Content Include="js\md5.js" />
     <Content Include="js\modernizr.custom.70111.js" />
+    <Content Include="js\responsiveslides.js" />
+    <Content Include="js\responsiveslides.min.js" />
     <Content Include="js\script.js" />
     <Content Include="js\viewimageresize.js" />
     <Content Include="js\wrest.js" />
