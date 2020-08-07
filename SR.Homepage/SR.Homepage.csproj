@@ -114,6 +114,15 @@
     <Content Include="content\images\dot.png" />
     <Content Include="content\images\event.png" />
     <Content Include="content\images\footer_logo.png" />
+    <Content Include="content\images\func1.jpg" />
+    <Content Include="content\images\func2.jpg" />
+    <Content Include="content\images\func3.jpg" />
+    <Content Include="content\images\func4.jpg" />
+    <Content Include="content\images\func5.jpg" />
+    <Content Include="content\images\func6.jpg" />
+    <Content Include="content\images\func7.jpg" />
+    <Content Include="content\images\func8.jpg" />
+    <Content Include="content\images\func9.jpg" />
     <Content Include="content\images\img01.png" />
     <Content Include="content\images\img02.png" />
     <Content Include="content\images\img03.png" />
@@ -163,6 +172,9 @@
     <Content Include="content\images\quick\m_top.png" />
     <Content Include="content\images\quick\top_btn.png" />
     <Content Include="content\images\review_logo1.png" />
+    <Content Include="content\images\review_logo2.png" />
+    <Content Include="content\images\review_logo3.png" />
+    <Content Include="content\images\review_logo4.png" />
     <Content Include="content\images\section_01.png" />
     <Content Include="content\images\section_01_img.png" />
     <Content Include="content\images\section_02.png" />
