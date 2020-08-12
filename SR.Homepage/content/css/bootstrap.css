@@ -33,7 +33,12 @@ a:active, a:hover {
 abbr[title] {
 	border-bottom: 1px dotted
 }
-b, strong {
+b, 
+
+
+
+
+ {
 	font-weight: 700
 }
 dfn {
