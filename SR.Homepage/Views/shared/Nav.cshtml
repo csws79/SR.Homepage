@@ -1,71 +1,71 @@
 ﻿<script>
-$(document).ready(function(){
-	$(".menu ul").mouseover(function(){
-		$(".gnb_bg").css({"display":"block", "opacity":"1"}).animate({opacity:1}, 800);
-	});
-	$(".menu ul").mouseout(function(){
-		$(".gnb_bg").css({"display":"none", "opacity":"0"}).animate({opacity:1}, 800);
-	});
-});
+    $(document).ready(function () {
+        $(".menu ul").mouseover(function () {
+            $(".gnb_bg").css({ "display": "block", "opacity": "1" }).animate({ opacity: 1 }, 800);
+        });
+        $(".menu ul").mouseout(function () {
+            $(".gnb_bg").css({ "display": "none", "opacity": "0" }).animate({ opacity: 1 }, 800);
+        });
+    });
 
 </script>
 
-    <div class="nav_wrapper">
+<div class="nav_wrapper">
 
-        <div class="container">
-            <h1><a href="/"><img src="~/content/images/logo.png" alt="" /></a></h1>
-            <div class="spinner-master">
-                <input type="checkbox" id="spinner-form" />
-                <label for="spinner-form" class="spinner-spin">
-                    <div class="spinner diagonal part-1"></div>
-                    <div class="spinner horizontal"></div>
-                    <div class="spinner diagonal part-2"></div>
-                </label>
-            </div>
-            <!-- LOCAL NAVIGATIONB BAR -->
-            <div class="menu" id="menu">
-                <ul>
-                    <li>
-                        <a href="@Url.Action("smartraiser1")" title="스마트레이저 서비스">스마트레이저 서비스</a>
-                        <ul class="submenu">
-                            <li><a href="@Url.Action("smartraiser1")" title="전체 기능">기능 안내</a></li>
-                            <li><a href="@Url.Action("smartraiser2")" title="전체 기능">특징 안내</a></li>
-                            <li><a href="@Url.Action("coaching")" title="스마트코칭">스마트코칭</a></li>
-                            <li><a href="@Url.Action("interlock")" title="연동 페이지 제작">온라인 페이지 제작</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("onlinepage")" title="주요 기능 가이드">주요 기능 가이드</a>
-                        <ul class="submenu">
-                            <li><a href="@Url.Action("onlinepage")" title="SmartGive 안내">SmartGive 안내</a></li>
-                            <li><a href="@Url.Action("cmspg")" title="CMS/PG">CMS/PG</a></li>
-                            <li><a href="@Url.Action("member")" title="구성원관리">후원자 관리</a></li>
-                            <li><a href="@Url.Action("mailing")" title="메일링">메일링</a></li>
-                            <li><a href="@Url.Action("receipt")" title="영수증처리">기부금영수증 발급</a></li>
-                            <li><a href="@Url.Action("relation")" title="관계관리">관계 관리</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("faq")" title="고객센터">고객센터</a>
-                        <ul class="submenu">
-                            <li><a href="@Url.Action("faq")" title="FAQ">FAQ</a></li>
-                            <li><a href="@Url.Action("question")" title="사용문의">사용문의</a></li>
-                            <li><a href="@Url.Action("notice")" title="공지사항">공지사항</a></li>
-                            <li><a href="@Url.Action("diagnosis")" title="단체 무료진단">단체 무료진단</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("about1")" title="About">About us</a>
-                        <ul class="submenu">
-                            <li><a href="@Url.Action("about1")" title="미션/비전">미션/비전</a></li>
-                            <li><a href="@Url.Action("about2")" title="사용단체 및 후기">서비스 리뷰</a></li>
-                            <li><a href="@Url.Action("about3")" title="CONTACT US">CONTACT US</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="gnb_bg"> </div>
-            </div>
+    <div class="container">
+        <h1><a href="/"><img src="~/content/images/logo.png" alt="" /></a></h1>
+        <div class="spinner-master">
+            <input type="checkbox" id="spinner-form" />
+            <label for="spinner-form" class="spinner-spin">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+        </div>
+        <!-- LOCAL NAVIGATIONB BAR -->
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="@Url.Action("smartraiser1")" title="스마트레이저 서비스">스마트레이저 서비스</a>
+                    <ul class="submenu">
+                        <li><a href="@Url.Action("smartraiser1")" title="기능 안내">기능 안내</a></li>
+                        <li><a href="@Url.Action("smartraiser2")" title="특징 안내">특징 안내</a></li>
+                        <li><a href="@Url.Action("coaching")" title="스마트코칭">스마트코칭</a></li>
+                        <li><a href="@Url.Action("interlock")" title="온라인 페이지 제작">온라인 페이지 제작</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="@Url.Action("onlinepage")" title="주요 기능 가이드">주요 기능 가이드</a>
+                    <ul class="submenu">
+                        <li><a href="@Url.Action("onlinepage")" title="SmartGive 안내">SmartGive 안내</a></li>
+                        <li><a href="@Url.Action("cmspg")" title="CMS/PG">CMS/PG</a></li>
+                        <li><a href="@Url.Action("member")" title="후원자 관리">후원자 관리</a></li>
+                        <li><a href="@Url.Action("mailing")" title="메일링">메일링</a></li>
+                        <li><a href="@Url.Action("receipt")" title="기부금영수증 발급">기부금영수증 발급</a></li>
+                        <li><a href="@Url.Action("relation")" title="관계 관리">관계 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="@Url.Action("faq")" title="고객센터">고객센터</a>
+                    <ul class="submenu">
+                        <li><a href="@Url.Action("faq")" title="FAQ">FAQ</a></li>
+                        <li><a href="@Url.Action("question")" title="사용문의">사용문의</a></li>
+                        <li><a href="@Url.Action("notice")" title="공지사항">공지사항</a></li>
+                        <li><a href="@Url.Action("diagnosis")" title="단체 무료진단">단체 무료진단</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="@Url.Action("about1")" title="About">About us</a>
+                    <ul class="submenu">
+                        <li><a href="@Url.Action("about1")" title="미션/비전">미션/비전</a></li>
+                        <li><a href="@Url.Action("about2")" title="서비스 리뷰">서비스 리뷰</a></li>
+                        <li><a href="@Url.Action("about3")" title="CONTACT US">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb_bg"> </div>
         </div>
     </div>
+</div>
 
-    <script src="~/js/script.js"></script>
+<script src="~/js/script.js"></script>
