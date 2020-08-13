@@ -2,6 +2,8 @@
 
 /* layout */
 @import url('style.css');
+
+
 #wrap {position:relative;width:100%;height:100%;max-height:100%;z-index:1;}
 #wrap:after {content:" "; display:block; clear:both;}
 .nav_wrapper {position: fixed;width: 100%;     left: 0;height:127px;    top: 0; transition: top .5s ease-out;background:#fff;border-bottom:1px solid #d7d7d7;z-index:9999}
@@ -353,12 +355,12 @@ a.menu-link.active:after { content: "\2715"; }
 }
 
 
-/*비디오프레임*/
+/*비디오프레임
 .video_wrap{ position:relative; width:100%; height:0; padding-bottom:56.25%; } 
 .video_wrap iframe{ position:absolute; width:100%; height:100% }
 
 iframe {position:absolute; width:100%; height:100%;}
-
+*/
 
 /*FAQ 내부 메뉴*/
 
