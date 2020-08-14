@@ -355,12 +355,12 @@ a.menu-link.active:after { content: "\2715"; }
 }
 
 
-/*비디오프레임
+/*비디오프레임*/
 .video_wrap{ position:relative; width:100%; height:0; padding-bottom:56.25%; } 
 .video_wrap iframe{ position:absolute; width:100%; height:100% }
 
 iframe {position:absolute; width:100%; height:100%;}
-*/
+
 
 /*FAQ 내부 메뉴*/
 
