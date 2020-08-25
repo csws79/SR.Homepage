@@ -223,6 +223,9 @@
     <Content Include="content\images\section_02_banner9.png" />
     <Content Include="content\images\section_02_img.png" />
     <Content Include="content\images\section_02_img1.png" />
+    <Content Include="content\images\section_02_img1_new.png" />
+    <Content Include="content\images\section_02_img1_new01.png" />
+    <Content Include="content\images\section_02_img1_new1.png" />
     <Content Include="content\images\section_02_img2.png" />
     <Content Include="content\images\section_02_img3.png" />
     <Content Include="content\images\section_03.png" />
