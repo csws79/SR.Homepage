@@ -44,6 +44,12 @@ jQuery(document).ready(function() {
 
         </ul>
     </nav>
+
+    <select name="language" onchange="if (this.value) location.href = (this.value);">
+        <option value="#" selected>SmartRaiser 사용에 관한 질문</option>
+        <option value="@Url.Action("faq_func")">SmartRaiser 기능에 관한 질문</option>
+        <option value="@Url.Action("faq_dona")">기부자 응대에 관한 질문</option>
+    </select>
 </div>
 
 <div class="container" style="margin:30px auto 100px;">
