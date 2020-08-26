@@ -29,13 +29,14 @@ jQuery(document).ready(function() {
 
 
 <div class="container">
-    <!-- 모바일 화면에서 보여질 토글 메뉴 -->
+    <!--
+    <!-- 모바일 화면에서 보여질 토글 메뉴 --
     <button type="button" class="menuBtn">
         <i><img src="~/content/images/top.png" style="width:20px;height:20px;" /></i><span>분류</span>
     </button>
 
 
-    <!-- 내비게이션 메뉴, 창크기에 맞게 변화한다.  -->
+    <!-- 내비게이션 메뉴, 창크기에 맞게 변화한다.--
     <nav class="menuNav" id="menuNav">
         <ul>
             <li><a href="@Url.Action("faq")">SmartRaiser사용</a></li>
@@ -44,7 +45,7 @@ jQuery(document).ready(function() {
 
         </ul>
     </nav>
-
+    -->
     <select name="language" onchange="if (this.value) location.href = (this.value);">
         <option value="@Url.Action("faq")" selected>SmartRaiser 사용에 관한 질문</option>
         <option value="#" selected>SmartRaiser 기능에 관한 질문</option>
