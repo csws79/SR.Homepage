@@ -361,7 +361,9 @@
         };
 
         /**
-        * Slides right the slider of the active section.
+        * Slides right the 
+
+ of the active section.
         */
         FP.moveSlideRight = function(){
             moveSlide('next');
