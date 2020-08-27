@@ -107,6 +107,7 @@
     <Content Include="content\images\3_SmartPartner.png" />
     <Content Include="content\images\4_SmartSurvey.png" />
     <Content Include="content\images\5_SmartGift.png" />
+    <Content Include="content\images\auto.jpg" />
     <Content Include="content\images\b1.png" />
     <Content Include="content\images\b2.png" />
     <Content Include="content\images\b3.png" />
@@ -331,7 +332,6 @@
     <Content Include="Views\Home\interlock.cshtml" />
     <Content Include="Views\Home\mailing.cshtml" />
     <Content Include="Views\Home\member.cshtml" />
-    <Content Include="Views\Home\notice.cshtml" />
     <Content Include="Views\Home\onlinepage.cshtml" />
     <Content Include="Views\Home\question.cshtml" />
     <Content Include="Views\Home\receipt.cshtml" />
@@ -339,6 +339,7 @@
     <Content Include="Views\Home\faq_dona.cshtml" />
     <Content Include="Views\Home\faq_func.cshtml" />
     <None Include="Properties\PublishProfiles\SR.Homepage.pubxml" />
+    <Content Include="Views\Home\core.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

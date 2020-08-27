@@ -121,6 +121,10 @@ namespace SR.Homepage.Controllers
         {
             return View();
         }
+        public ActionResult core()
+        {
+            return View();
+        }
 
     }
 }
