@@ -113,6 +113,16 @@
     <Content Include="content\images\banner1.jpg" />
     <Content Include="content\images\banner2.jpg" />
     <Content Include="content\images\banner3.jpg" />
+    <Content Include="content\images\core01.png" />
+    <Content Include="content\images\core01_s.png" />
+    <Content Include="content\images\core02.png" />
+    <Content Include="content\images\core02_m.png" />
+    <Content Include="content\images\core03.png" />
+    <Content Include="content\images\core03_a.png" />
+    <Content Include="content\images\core04.png" />
+    <Content Include="content\images\core04_r.png" />
+    <Content Include="content\images\core05.png" />
+    <Content Include="content\images\core05_t.png" />
     <Content Include="content\images\data.png" />
     <Content Include="content\images\dot.png" />
     <Content Include="content\images\event.png" />
