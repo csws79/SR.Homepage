@@ -20,36 +20,21 @@ jQuery(document).ready(function() {
     <h3>SmartRaiser</h3>
 </div>
 
-
 <div class="container text-center pd60">
     <h3 class="title">FAQ</h3>
     <p class="f_18_s text-center">자주 문의주시는 질문들을 모아놓았습니다.</p>
 </div>
 
-
-
-<div class="container">
-    <!-- 모바일 화면에서 보여질 토글 메뉴 -->
-    <button type="button" class="menuBtn">
-        <i><img src="~/content/images/top.png" style="width:20px;height:20px;" /></i><span>분류</span>
-    </button>
-
-
-    <!-- 내비게이션 메뉴, 창크기에 맞게 변화한다.  -->
-    <nav class="menuNav" id="menuNav">
-        <ul>
-            <li><a href="@Url.Action("faq")">SmartRaiser사용</a></li>
-            <li><a href="#">SmartRaiser기능</a></li>
-            <li><a href="@Url.Action("faq_dona")" )">기부자 응대</a></li>
-
-        </ul>
-    </nav>
-
-    <select name="language" onchange="if (this.value) location.href = (this.value);">
-        <option value="@Url.Action("faq")" selected>SmartRaiser 사용에 관한 질문</option>
-        <option value="#" selected>SmartRaiser 기능에 관한 질문</option>
-        <option value="@Url.Action("faq_dona")">기부자 응대에 관한 질문</option>
-    </select>
+<div class="container text-center">
+    <div class="col-sm-4 newbox" style="background-color:#042b48; cursor:pointer; color:#000000" onclick="location.href = '/Home/faq';">
+        Smartraiser 사용
+    </div>
+    <div class="col-sm-4 newbox" style="background-color:#0b62a3; cursor:pointer; color:#ffffff" onclick="location.href = '/Home/faq_func';">
+        Smartraiser 기능
+    </div>
+    <div class="col-sm-4 newbox" style="background-color:#042b48; cursor:pointer; color:#000000" onclick="location.href = '/Home/faq_dona';">
+        기부자 응대
+    </div>
 </div>
 
 <div class="container" style="margin:30px auto 100px;">
