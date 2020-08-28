@@ -101,15 +101,23 @@
     <Content Include="content\css\main.css" />
     <Content Include="content\css\mobile.css" />
     <Content Include="content\css\responsiveslides.css" />
+    <Content Include="content\css\slick-theme.css" />
+    <Content Include="content\css\slick.css" />
+    <Content Include="content\css\slider-pro.css" />
+    <Content Include="content\css\slider-pro.min.css" />
     <Content Include="content\css\style.css" />
     <Content Include="content\images\1_SmartGive.png" />
     <Content Include="content\images\2_SmartVolunteer.png" />
     <Content Include="content\images\3_SmartPartner.png" />
     <Content Include="content\images\4_SmartSurvey.png" />
     <Content Include="content\images\5_SmartGift.png" />
+    <Content Include="content\images\b1.jpg" />
     <Content Include="content\images\b1.png" />
+    <Content Include="content\images\b2.jpg" />
     <Content Include="content\images\b2.png" />
+    <Content Include="content\images\b3.jpg" />
     <Content Include="content\images\b3.png" />
+    <Content Include="content\images\b5.jpg" />
     <Content Include="content\images\banner1.jpg" />
     <Content Include="content\images\banner2.jpg" />
     <Content Include="content\images\banner3.jpg" />
@@ -123,6 +131,7 @@
     <Content Include="content\images\core04_r.png" />
     <Content Include="content\images\core05.png" />
     <Content Include="content\images\core05_t.png" />
+    <Content Include="content\images\core_table03.png" />
     <Content Include="content\images\data.png" />
     <Content Include="content\images\dot.png" />
     <Content Include="content\images\event.png" />
@@ -140,6 +149,7 @@
     <Content Include="content\images\func9.jpg" />
     <Content Include="content\images\img01.png" />
     <Content Include="content\images\img01_new.png" />
+    <Content Include="content\images\img01_new1.jpg" />
     <Content Include="content\images\img02.png" />
     <Content Include="content\images\img03.png" />
     <Content Include="content\images\img04.png" />
@@ -159,6 +169,7 @@
     <Content Include="content\images\img4_2.png" />
     <Content Include="content\images\img4_3.png" />
     <Content Include="content\images\img_hand1.png" />
+    <Content Include="content\images\img_hand_new.png" />
     <Content Include="content\images\interlock1.png" />
     <Content Include="content\images\interlock1_bg.png" />
     <Content Include="content\images\logo-01.png" />
@@ -280,6 +291,8 @@
     <Content Include="js\jquery.fullPage.js" />
     <Content Include="js\jquery.menu.js" />
     <Content Include="js\jquery.register_form.js" />
+    <Content Include="js\jquery.sliderPro.js" />
+    <Content Include="js\jquery.sliderPro.min.js" />
     <Content Include="js\jquery.sms_paging.js" />
     <Content Include="js\jquery.ulslide.js" />
     <Content Include="js\kakaolink.js" />
@@ -289,6 +302,8 @@
     <Content Include="js\responsiveslides.js" />
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="js\script.js" />
+    <Content Include="js\slick.js" />
+    <Content Include="js\slick.min.js" />
     <Content Include="js\viewimageresize.js" />
     <Content Include="js\wrest.js" />
     <Content Include="Views\Home\about1.cshtml" />
@@ -348,6 +363,10 @@
     <Content Include="Views\Home\relation.cshtml" />
     <Content Include="Views\Home\faq_dona.cshtml" />
     <Content Include="Views\Home\faq_func.cshtml" />
+    <Content Include="content\css\slick-theme.less" />
+    <Content Include="content\css\slick-theme.scss" />
+    <Content Include="content\css\slick.less" />
+    <Content Include="content\css\slick.scss" />
     <None Include="Properties\PublishProfiles\SR.Homepage.pubxml" />
     <Content Include="Views\Home\core.cshtml" />
     <None Include="Web.Debug.config">
