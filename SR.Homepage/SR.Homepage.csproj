@@ -113,6 +113,7 @@
     <Content Include="content\images\b2.png" />
     <Content Include="content\images\b3.jpg" />
     <Content Include="content\images\b3.png" />
+    <Content Include="content\images\b5.jpg" />
     <Content Include="content\images\banner1.jpg" />
     <Content Include="content\images\banner2.jpg" />
     <Content Include="content\images\banner3.jpg" />
@@ -136,6 +137,7 @@
     <Content Include="content\images\func9.jpg" />
     <Content Include="content\images\img01.png" />
     <Content Include="content\images\img01_new.png" />
+    <Content Include="content\images\img01_new1.jpg" />
     <Content Include="content\images\img02.png" />
     <Content Include="content\images\img03.png" />
     <Content Include="content\images\img04.png" />
@@ -155,6 +157,7 @@
     <Content Include="content\images\img4_2.png" />
     <Content Include="content\images\img4_3.png" />
     <Content Include="content\images\img_hand1.png" />
+    <Content Include="content\images\img_hand_new.png" />
     <Content Include="content\images\interlock1.png" />
     <Content Include="content\images\interlock1_bg.png" />
     <Content Include="content\images\logo-01.png" />
