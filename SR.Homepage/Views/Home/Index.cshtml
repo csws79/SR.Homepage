@@ -4,7 +4,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -15,20 +14,15 @@
     });
 </script>
 
-<div class="container" style="padding-top:140px;">
+<div class="container" style="padding-top:140px">
     <div class="slider">
-        <div><img src="/content/images/banner1.jpg" class="img-responsive" style="width:100%;height:100%;" /></div>
-        <div><img src="~/content/images/banner2.jpg" class="img-responsive" style="width:100%;height:100%;" /></div>
-        <div><img src="~/content/images/banner3.jpg" class="img-responsive" style="width:100%;height:100%;" /></div>
+        <div><img src="/content/images/b1.jpg" style="width:100%;height:100%;" /></div>
+        <div><img src="~/content/images/b2.jpg" style="width:100%;height:100%;" /></div>
+        <div><img src="~/content/images/b3.jpg" style="width:100%;height:100%;" /></div>
     </div>
 </div>
 
-
-
-
 <div id="fullpage">
-
-
 
     <div class="section" id="section2">
         <div class="container text-center">
@@ -38,14 +32,12 @@
             <div class="col-sm-4">
                 <img src="~/content/images/section_02_img1_new01.png" />
                 <div class="box">
-                    <h3>스마트레이저 프로그램</h3>
+                    <h3><strong>스마트레이저</strong></h3>
                     <ul>
-                        <li>후원금 관리를 비롯하여 후원자에 대해 360도 뷰(view)를 </li>
-                        <li>참여형 기부가 가능한 물품 구매 기부(SmartGift)</li>
-                        <li>어린이 결연 시 즉시 선물이나 편지 전송(SmartPartner)</li>
-                        <li>자원봉사 신청과 확인증 즉시 발급(SmartVolunteer)</li>
-                        <li>이벤트 참여 및 신청 확인(SmartSurvey)</li>
-                        <li>온라인 뉴스레터 신청</li>
+                        <li style="font-size:1em">후원금 관리를 비롯하여 후원자에 대해 360도 뷰(View)를 제공합니다.</li>
+                        <li style="font-size:1em">모금 활동을 기획하고 실행하여 관리하는 모금 솔루션입니다.</li>
+                        <li style="font-size:1em">단체의 모든 데이터를 통합하고 연계 관리합니다.</li>
+                        <li style="font-size:1em">자동화 기능으로 모금 행정에 투입하는 시간을 줄여 모금 기획 및 분석을 강화할 수 있습니다.</li>
                     </ul>
                 </div>
                 <p class="link"><a href="@Url.Action("smartraiser1")">READ MORE</a></p>
@@ -53,9 +45,9 @@
             <div class="col-sm-4">
                 <img src="~/content/images/section_02_img2.png" />
                 <div class="box">
-                    <h3>온라인 페이지 제작</h3>
+                    <h3><strong>온라인 페이지 연동</strong></h3>
                     <p>
-                        후원자들의 즉시 참여가 가능한 온라인서비스를 소개합니다.
+                        후원자들의 즉시 참여가 가능한 온라인서비스를 지원합니다.
                     </p>
 
                     <ul>
@@ -75,7 +67,7 @@
             <div class="col-sm-4">
                 <img src="~/content/images/section_02_img3.png" />
                 <div class="box">
-                    <h3>스마트코칭</h3>
+                    <h3><strong>스마트코칭</strong></h3>
                     <ul>단체에 대한 전문성 있는 코칭 제공</ul>
                     <p>스마트레이저는 100년 역사와  전문성을 자랑하는 Brakeley와 ㈜도움과나눔의 실제적인 모금 컨설팅 경험과 지식을 담아 탄생하였습니다. 이러한 노하우를 바탕으로 이제, 스마트레이저에서 단체 진단 및 모금 코칭을 지원합니다.</p>
                     <p>스마트코칭을 통해 우리 단체의 현안 진단 및 역량 강화를 시도할 수 있습니다.</p>
@@ -126,6 +118,11 @@
                         실제로 저희 단체의 경우 스마트레이저를 통해 출금성공율이 계속 높아지는 것을 경험할 수 있었습니다.
                         무엇보다 스마트레이저 직원분들께서 고객사의 발전을 위해 함께 고민해 주시며
                         친절하고 빠른 서포트를 해주시는 것에 매우 감사하게 생각합니다."
+                        <br />
+                        ㅤ
+                        <br />
+                        ㅤ
+                        <br />
                     </h3>
                 </div>
 
@@ -155,7 +152,7 @@
         </div>
     </div>
 
-    <div class="section" id="section5" >
+    <div class="section" id="section5" style="background-color:#ebeced">
         <div class="container text-center">
             <h2>단체 모금 진단</h2>
             <p>
@@ -164,8 +161,9 @@
                 많은 데이터를 대신 관리해 줄 프로그램을 찾고 계신가요?<br />
                 체계화된 모금과 프로그램 기법을 확실하게 습득하고 싶으신가요?<br />
             </p>
-
-
+            <!--
+            <img src="~/content/images/main_review.png" />
+                -->
             <p></p>
 
             <strong style="font-size:20px; color:#ffffff">
