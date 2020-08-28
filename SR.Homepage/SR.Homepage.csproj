@@ -175,6 +175,7 @@
     <Content Include="content\images\logo-12.png" />
     <Content Include="content\images\logo.png" />
     <Content Include="content\images\logo_whitebg.png" />
+    <Content Include="content\images\main_coaching.png" />
     <Content Include="content\images\main_review.png" />
     <Content Include="content\images\no1.png" />
     <Content Include="content\images\no2.png" />
